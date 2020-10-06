@@ -9,18 +9,17 @@ namespace BinarySearchTree
 	class BinarySearchTree
 	{
     private Node root;
-
-    public BinarySearchTree()
-    {
-      root = null;
-      Count = 0;
-    }
-
     public int Count { get; private set; }
 
     public bool IsEmpty
     {
       get { return root == null; }
+    }
+
+    public BinarySearchTree()
+    {
+      root = null;
+      Count = 0;
     }
 
     public void Add(int value)

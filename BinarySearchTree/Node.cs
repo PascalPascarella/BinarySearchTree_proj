@@ -8,18 +8,18 @@ namespace BinarySearchTree
 {
 	class Node
 	{
+    public Node Left { get; set; }
+
+    public Node Right { get; set; }
+
+    public int Value { get; }
+
     public Node(int value)
     {
       this.Value = value;
       Left = null;
       Right = null;
     }
-
-    public Node Left { get; set; }
-
-    public Node Right { get; set; }
-
-    public int Value { get; }
 
     public void Add(int value)
     {
