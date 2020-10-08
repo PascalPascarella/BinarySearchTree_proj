@@ -52,5 +52,22 @@ namespace BinarySearchTree
         }
       }
     }
+    public string Search(int value)
+    {
+      if (value < Value && Left != null)
+      {
+        return "L: " + Left.Search(value);
+      }
+      else if (value > Value && Right != null)
+      {
+        return "R: " + Right.Search(value);
+      }
+      else if (value == Value)
+      {
+        return "";
+      }
+
+      return "Value not found.";
+    }
   }
 }

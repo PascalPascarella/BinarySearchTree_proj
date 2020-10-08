@@ -35,5 +35,16 @@ namespace BinarySearchTree
         Count++;
       }
     }
+    public string Search(int value)
+    {
+      string results = root.Search(value);
+
+      if (results.Contains("Value not found."))
+      {
+        results = "Value not found.";
+      }
+
+      return results.Substring(0, results.Length - 2);
+    }
   }
 }
